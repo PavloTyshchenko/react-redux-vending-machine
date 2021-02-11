@@ -1,3 +1,5 @@
+Live Demo: https://react-redux-vending-machine.herokuapp.com/
+
 IN PROGRESS:
 - CHANGE RETURN
 - MANAGING FURTHER STOCK OF PRODUCTS AND CHANGE.
