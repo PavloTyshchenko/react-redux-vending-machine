@@ -6,7 +6,7 @@ import { Card, Badge } from 'react-bootstrap';
 import noImg from '../../assets/images/no-image.png';
 import { selectProduct } from '../../store/actions';
 
-const ProductItem = ({ product, selected, selectProduct }) => {
+const ProductItem = ({ product, selected, sold, selectProduct }) => {
   const { name, price, image, qty } = product;
   const [isSelected, setIsSelected] = useState('');
   let isAvailable = qty > 0;
@@ -15,13 +15,14 @@ const ProductItem = ({ product, selected, selectProduct }) => {
     if (selected) {
       setIsSelected(product.name === selected.name ? ' selected' : '');
     }
-  }, [selected]);
+  // }, [selected]);
+  });
 
   const handleSelectProduct = (product) => {
     selectProduct(product);
   }
 
-  if (isAvailable) {
+  if (isAvailable || !sold) {
     return (
       <Card
         className={`cardItem hovering pointer ${isSelected}`}
