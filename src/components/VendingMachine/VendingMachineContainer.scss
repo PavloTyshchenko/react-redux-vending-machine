@@ -1,0 +1,37 @@
+.vending-machine-container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  border-radius: 10px;
+  background: aqua;
+
+  .header {
+    border-radius: 10px;
+    background: beige;
+  }
+
+  .working-area {
+    flex-grow: 1;
+    background: azure;
+    border-radius: 10px;
+  }
+
+  .product-list {
+    padding: 10px;
+    border-radius: 10px;
+    background: slategrey;
+  }
+
+  .output-tray {
+    border-radius: 10px;
+    background: slategrey;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    &.change {
+      margin-left: auto;
+      width: fit-content;
+    }
+  }
+}

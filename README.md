@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+IN PROGRESS:
+- CHANGE RETURN
+- MANAGING FURTHER STOCK OF PRODUCTS AND CHANGE.
+
+# React Redux Vending Machine
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
