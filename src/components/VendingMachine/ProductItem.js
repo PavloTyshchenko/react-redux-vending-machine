@@ -15,14 +15,15 @@ const ProductItem = ({ product, selected, sold, selectProduct }) => {
     if (selected) {
       setIsSelected(product.name === selected.name ? ' selected' : '');
     }
-  // }, [selected]);
   });
 
   const handleSelectProduct = (product) => {
     selectProduct(product);
   }
-
-  if (isAvailable || !sold) {
+  if (sold) {
+      isAvailable = false;
+  }
+  if (isAvailable) {
     return (
       <Card
         className={`cardItem hovering pointer ${isSelected}`}
